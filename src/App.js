@@ -49,10 +49,14 @@ const App = () => {
   }, [])
   return (
     <div className="App">
-      Device Id: {deviceIds}
-      <video width="750" height="500" controls>
-        <source src={resources} type="video/mp4" />
-      </video>
+      <h3>
+        Device Id: {["LabEye-dVr", "LabEye-H4O", "LabEye-OP2"]}
+      </h3>
+      <h3>
+        <video width="750" height="500" controls>
+          <source src="https://frontend-test-2022-bucket.s3.eu-west-2.amazonaws.com/frontend_test.mp4" type="video/mp4" />
+        </video>
+      </h3>
     </div>
   );
 }
